@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #222222;
+}
+
+#title {
+  align-self: center;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
+
+nav ul li {
+  align-self: center;
+  color: white;
+  margin: 15px;
+}
+
+/* FEATURED */
+#construction {
+  margin: auto;
+  height: 500px;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
