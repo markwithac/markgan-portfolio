@@ -5,9 +5,9 @@ const Header = () => {
     <nav>
       <a id="title" href="/">Mark Ganhao</a>
       <ul>
-        <li>Link</li>
-        <li>Linked</li>
-        <li>Linkydink</li>
+        <li>Projects</li>
+        <li>Resources</li>
+        <li>About</li>
       </ul>
     </nav>
   )

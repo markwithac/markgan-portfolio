@@ -5,18 +5,20 @@
 }
 
 nav {
-  height: 60px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: #222222;
+  position: fixed;
+  width: 100vw;
+  background: white;
 }
 
 #title {
   align-self: center;
   padding-left: 20px;
   text-decoration: none;
-  color: white
+  color: #222222
 }
 
 nav ul {
@@ -30,15 +32,51 @@ nav ul {
 
 nav ul li {
   align-self: center;
-  color: white;
+  color: #222222;
   margin: 15px;
 }
 
 /* FEATURED */
 #construction {
-  margin: auto;
-  height: 500px;
+  background: #222222;
+  padding-top: 70px;
+  height: 400px;
   text-align: center;
   font-size: 2rem;
-  padding-top: 50px;
+  color: white;
+}
+
+.fa-hammer {
+  color: white;
+}
+
+#maintenance {
+  padding: 30px 0 30px;
+}
+
+
+/* PROJECT LIST */
+table {
+  width:100%;
+}
+
+#projectListTitle {
+  text-align: center;
+  padding: 25px 0 15px 0;
+}
+
+#projectListBtn {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+
+/* CONTACT DETAILS */
+#contactDetails {
+  padding-top: 25px;
+  display: block;
+  background: #222222;
+  color: white;
+  height: 200px;
+  text-align: center;
 }

@@ -1,15 +1,17 @@
 import React from "react"
 import Header from "../components/Header";
 import Featured from "../components/Featured";
-// import AddRestaurant from '../components/AddRestaurant'
-// import RestaurantList from '../components/RestaurantList'
+import ProjectList from "../components/ProjectList";
+import Contact from "../components/Contact"
+
 
 const home = () => {
   return (
     <div>
       <Header />
       <Featured />
-      {/* <Featured /> */}
+      <ProjectList />
+      <Contact />
     </div>
   )
 }
