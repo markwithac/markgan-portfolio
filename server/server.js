@@ -41,6 +41,21 @@ app.get("/api/v1/", async (req, res) => {
 //   }
 // })
 
+app.post('/api/v1/admin/addProject', async (req, res) => {
+  try {
+    const projects = await db.query("INSERT INTO projects (title, description, url) VALUES ($1, $2, $3) RETURNING *", 
+    [req.body.title, req.body.description, req.body.url]);
+    res.status(200).json({
+      status: "Success",
+      data: {
+        projects: projects.rows[0],
+      },
+    })
+  } catch (error) {
+    console.error(error.message)
+  }
+})
+
 
 const port = process.env.PORT;
 app.listen(port, () => {

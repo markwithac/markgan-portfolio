@@ -1,42 +1,45 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import ProjectFinder from "../apis/ProjectFinder";
+import { ProjectsContext } from "../context/ProjectsContext";
 
 
-const ProjectList = () => {
+const ProjectList = (props) => {
+
+  const { projects, setProjects } = useContext(ProjectsContext);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await ProjectFinder.get('/')
-        console.log(response)
-      } catch (error) {
-        console.error(error.message)
-      } 
-    };
-    
+        setProjects(response.data.data.projects)
+      } catch (error) {}
+    }
     fetchData();
   }, [])
 
   return (
     <div className="container">
       <h2 id="projectListTitle">Projects</h2>
-      {/* <table className="table">
-
-        <tbody>
-          <tr className="tableRow">n
-            <th scope="row" className="iconTitle">
-              <i className="fas fa-gamepad fa-2x"></i>
-              <h5>Game</h5>
-            </th> 
-            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-            <td><button className="btn btn-outline-info">View</button></td>
-          </tr>
-
-        </tbody>
-      </table> */}
-      <div id="projectListBtn">
-        <button className="btn btn-sm btn-outline-secondary">View All</button>
-      </div>
+        <div>
+        {projects && 
+          projects.map(project => {
+            return (
+              <div id="projectComponent" key={project.id}>
+                <div id="projectComponentHeader">
+                  <div id="projectComponentIconTitle">
+                    <div className="icon">🏺</div>
+                    <div id="projectComponentTitle">{project.title}</div>
+                  </div>
+                  <div id="projectComponentDesc">{project.description}</div>
+                </div>
+                <a id="projectBtn" href={project.url}>
+                  <button type="submit" value="Source" className="btn btn-outline-info">Source</button>
+                </a>     
+              </div>
+        )})}
+        </div>
     </div>
+
   )
 }
 

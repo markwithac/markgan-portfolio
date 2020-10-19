@@ -18,16 +18,16 @@
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     width: 970px;
   }
-}
-@media (min-width: 1200px) {
+} */
+/* @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
-}
+} */
 
 /* HEADER */
 
@@ -46,7 +46,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 761px;
+  max-width: 750px;
   justify-content: space-between;
   align-content: center;
 }
@@ -119,6 +119,7 @@ table {
 #projectListTitle {
   text-align: center;
   padding: 25px 0 15px 0;
+  color: #222222;
 }
 
 .tableRow {
@@ -137,9 +138,43 @@ table {
   padding-bottom: 25px;
 }
 
+#projectComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 0 10px 0;
+  border-bottom: #cccccc solid 1px;
+}
+
+#projectComponentDesc {
+  color: #808080;
+  font-size: 0.85rem;
+}
+
+#projectComponentTitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#projectComponentIconTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  padding-right: 8px;;
+}
+
+#projectBtn {
+  align-self: center;
+}
+
+
 /* CONTACT DETAILS */
 #contactDetails {
-  padding-top: 25px;
+  margin-top: 25px;
+  padding-top: 100px;
   display: block;
   background: #222222;
   color: white;
@@ -150,3 +185,11 @@ table {
 
 
 
+
+
+
+
+/* ADMIN */
+.admin {
+  padding-top: 100px;
+}
