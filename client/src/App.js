@@ -2,10 +2,12 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./routes/home";
 import About from "./routes/about";
+import { ProjectsContextProvider } from './context/ProjectsContext';
 // import Contact from "./routes/contact";
 
 const App = () => {
   return (
+    <ProjectsContextProvider>
       <div>
         <Router>
           <Switch>
@@ -15,6 +17,7 @@ const App = () => {
           </Switch>
         </Router>
       </div>
+    </ProjectsContextProvider>
   )
 };
 

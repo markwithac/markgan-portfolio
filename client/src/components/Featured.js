@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div id="construction">
-      <i class="fas fa-hammer fa-2x" id="maintenance"> </i>
+      <i className="fas fa-hammer fa-2x" id="maintenance"> </i>
       <p>This website is under construction</p>
     </div>
   )

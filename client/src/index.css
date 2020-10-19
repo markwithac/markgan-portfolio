@@ -1,49 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* HEADER */
+
 nav {
-  height: 70px;
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  background: white;
+  
+}
+
+#navBar {
+  align-self: center;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 761px;
   justify-content: space-between;
-  position: fixed;
-  width: 100vw;
-  background: white;
+  align-content: center;
+}
+
+#logo {
+  padding-left: 15px;
+  display: flex;
+  align-self: center;
+  align-content: center;
+
 }
 
 #title {
   align-self: center;
-  padding-left: 20px;
+  padding-left: 5px;
   text-decoration: none;
-  color: #222222
+  color: #222222;
+  font-weight: 600; 
+  font-size: 1.04rem;
 }
 
-nav ul {
+#headerList {
+  margin: 0;
+  align-self: center;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-right: 50px;
+  padding-right: 15px;
 }
 
-
-nav ul li {
-  align-self: center;
+.headerListItem {
   color: #222222;
-  margin: 15px;
+  font-weight: 500;
+  font-size: 1.02rem;
+  padding: 10px;
+
 }
 
 /* FEATURED */
 #construction {
   background: #222222;
-  padding-top: 70px;
+  padding-top: 110px;
   height: 400px;
   text-align: center;
   font-size: 2rem;
   color: white;
+}
+
+#construction p {
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
 }
 
 .fa-hammer {
@@ -65,11 +121,21 @@ table {
   padding: 25px 0 15px 0;
 }
 
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.iconTitle {
+  display: flex;
+  flex-direction: row;
+}
+
 #projectListBtn {
   text-align: center;
   padding-bottom: 25px;
 }
-
 
 /* CONTACT DETAILS */
 #contactDetails {
@@ -80,3 +146,7 @@ table {
   height: 200px;
   text-align: center;
 }
+
+
+
+

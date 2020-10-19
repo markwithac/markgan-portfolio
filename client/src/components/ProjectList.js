@@ -1,47 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ProjectFinder from "../apis/ProjectFinder";
 
 
-class ProjectList extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <h2 id="projectListTitle">Projects</h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th> 
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-        <div id="projectListBtn">
-          <button className="btn btn-sm btn-outline-secondary">View All</button>
-        </div>
+const ProjectList = () => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await ProjectFinder.get('/')
+        console.log(response)
+      } catch (error) {
+        console.error(error.message)
+      } 
+    };
+    
+    fetchData();
+  }, [])
+
+  return (
+    <div className="container">
+      <h2 id="projectListTitle">Projects</h2>
+      {/* <table className="table">
+
+        <tbody>
+          <tr className="tableRow">n
+            <th scope="row" className="iconTitle">
+              <i className="fas fa-gamepad fa-2x"></i>
+              <h5>Game</h5>
+            </th> 
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+            <td><button className="btn btn-outline-info">View</button></td>
+          </tr>
+
+        </tbody>
+      </table> */}
+      <div id="projectListBtn">
+        <button className="btn btn-sm btn-outline-secondary">View All</button>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default ProjectList;
