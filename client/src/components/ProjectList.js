@@ -27,7 +27,7 @@ const ProjectList = (props) => {
               <div id="projectComponent" key={project.id}>
                 <div id="projectComponentHeader">
                   <div id="projectComponentIconTitle">
-                    <div className="icon">🏺</div>
+                    <span className="icon">🏺</span>
                     <div id="projectComponentTitle">{project.title}</div>
                   </div>
                   <div id="projectComponentDesc">{project.description}</div>
