@@ -1,10 +1,11 @@
-CREATE DATABASE portfolio;
+-- CREATE DATABASE portfolio;
 
 CREATE TABLE projects (
   project_id SERIAL PRIMARY KEY,
   title VARCHAR(25) NOT NULL,
   description varchar(150),
-  url TEXT NOT NULL, 
+  source_code TEXT NOT NULL, 
+  link TEXT,
   posting_date DATE NOT NULL DEFAULT CURRENT_DATE
 ); 
 
