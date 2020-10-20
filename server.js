@@ -46,8 +46,8 @@ app.get("/api/v1/", async (req, res) => {
 
 app.post('/api/v1/admin/addProject', async (req, res) => {
   try {
-    const projects = await db.query("INSERT INTO projects (title, description, url) VALUES ($1, $2, $3) RETURNING *", 
-    [req.body.title, req.body.description, req.body.url]);
+    const projects = await db.query("INSERT INTO projects (title, description, source_code, link) VALUES ($1, $2, $3, $4) RETURNING *", 
+    [req.body.title, req.body.description, req.body.url, req.body.link]);
     res.status(200).json({
       status: "Success",
       data: {

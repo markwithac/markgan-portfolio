@@ -9,6 +9,7 @@ const AdminAddProject = () => {
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
   const [url, setUrl] = useState("")
+  const [link, setLink] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,13 +49,23 @@ const AdminAddProject = () => {
             />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Link</label>
+          <label htmlFor="exampleFormControlInput1">Source Code Link</label>
           <input 
             className="form-control" 
             id="exampleFormControlInput1" 
             placeholder="Example: http://github/markwithac/project"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Website Link (if available)</label>
+          <input 
+            className="form-control" 
+            id="exampleFormControlInput1" 
+            placeholder="Example: http://github/markwithac/project"
+            value={link}
+            onChange={(e) => setLink(e.target.value)}
           />
         </div>
 
