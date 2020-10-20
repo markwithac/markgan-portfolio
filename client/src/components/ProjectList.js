@@ -6,7 +6,7 @@ import { ProjectsContext } from "../context/ProjectsContext";
 const ProjectList = (props) => {
 
   const { projects, setProjects } = useContext(ProjectsContext);
-
+  // eslint-disable-next-line
   useEffect(() => {
     const fetchData = async () => {
       try {
