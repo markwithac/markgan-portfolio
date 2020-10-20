@@ -10,7 +10,7 @@ const ProjectList = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await ProjectFinder.get('/')
+        const response = await ProjectFinder.get('/api/v1')
         setProjects(response.data.data.projects)
       } catch (error) {}
     }

@@ -13,7 +13,7 @@ const AdminAddProject = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await ProjectFinder.post('/admin/addProject', {
+      const response = await ProjectFinder.post('/api/v1/admin/addProject', {
         title,
         description: desc,
         url
