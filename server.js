@@ -15,8 +15,6 @@ if (process.env.NODE_ENV === "production)") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 
-
-
 // Get most recent projects for home page
 app.get("/api/v1/", async (req, res) => {
   try {
