@@ -11,7 +11,6 @@ const port = process.env.PORT || 3001;
 app.use(cors())
 app.use(express.json());
 
-console.log(process.env.baseUrl)
 
 // Get most recent projects for home page
 app.get("/api/v1/", async (req, res) => {
