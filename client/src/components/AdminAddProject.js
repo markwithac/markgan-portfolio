@@ -14,10 +14,11 @@ const AdminAddProject = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await ProjectFinder.post('/api/v1/admin/addProject', {
+      const response = await ProjectFinder.put(`/api/v1/admin/addProject/`, {
         title,
         description: desc,
-        url
+        url,
+        link,
       })
       addProject(response.data.data.project)
     } catch (error) {

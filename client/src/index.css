@@ -220,3 +220,8 @@ table {
 .admin {
   padding-top: 100px;
 }
+
+#adminContainer{
+  width: 98%;
+  margin: auto;
+}

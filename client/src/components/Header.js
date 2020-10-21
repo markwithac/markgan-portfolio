@@ -11,7 +11,7 @@ const Header = () => {
         
         <ul id="headerList">
           <li className="headerListItem">Projects</li>
-          <li className="headerListItem">Resources</li>
+          <li className="headerListItem">Articles</li>
           <li className="headerListItem">About</li>
         </ul>
       </div>

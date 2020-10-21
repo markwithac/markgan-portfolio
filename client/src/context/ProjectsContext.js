@@ -8,7 +8,7 @@ export const ProjectsContextProvider = (props) => {
   const addProject = (project) => {
     setProjects([...projects, project])
   };
-
+  
   return (
     <ProjectsContext.Provider value={ { projects, setProjects, addProject } }>
       {props.children}
