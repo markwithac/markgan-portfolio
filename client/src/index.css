@@ -7,6 +7,16 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  color: inherit;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -154,7 +164,7 @@ table {
 
 #projectComponentTitle {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 #projectComponentIconTitle {
@@ -162,8 +172,9 @@ table {
   flex-direction: row;
 }
 
-.icon{
-  padding-right: 8px;;
+#projectComponentIcon {
+  align-self: center;
+  padding-right: 8px;
 }
 
 #projectBtn {
@@ -183,10 +194,26 @@ table {
 }
 
 
+/* FOOTER */
+.quickLinks {
+  padding: 25px 0 25px;
+  list-style: none;
+  max-width: 450px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
 
-
-
-
+#smLinks {
+  padding: 25px 0 25px;
+  list-style: none;
+  max-width: 300px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
 
 
 /* ADMIN */

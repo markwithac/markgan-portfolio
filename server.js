@@ -11,6 +11,7 @@ const port = process.env.PORT || 3001;
 app.use(cors())
 app.use(express.json());
 
+console.log(process.env.baseUrl)
 
 // Get most recent projects for home page
 app.get("/api/v1/", async (req, res) => {
@@ -46,7 +47,7 @@ app.get("/api/v1/", async (req, res) => {
 
 app.post('/api/v1/admin/addProject', async (req, res) => {
   try {
-    const projects = await db.query("INSERT INTO projects (title, description, source_code, link) VALUES ($1, $2, $3, $4) RETURNING *", 
+    const projects = await db.query("INSERT INTO projects (title, description, source_code, link, icon) VALUES ($1, $2, $3, $4) RETURNING *", 
     [req.body.title, req.body.description, req.body.url, req.body.link]);
     res.status(200).json({
       status: "Success",

@@ -15,6 +15,7 @@ const ProjectList = (props) => {
       } catch (error) {}
     }
     fetchData();
+    // eslint-disable-next-line
   }, [])
 
   return (
@@ -24,15 +25,18 @@ const ProjectList = (props) => {
         {projects && 
           projects.map(project => {
             return (
+
               <div id="projectComponent" key={project.id}>
-                <div id="projectComponentHeader">
-                  <div id="projectComponentIconTitle">
-                    <span className="icon">🏺</span>
-                    <div id="projectComponentTitle">{project.title}</div>
-                  </div>
+                <div id="projectComponentHeader" >
+                  <a href={project.link}>
+                    <div id="projectComponentIconTitle">
+                      <div id="projectComponentIcon" className={project.icon}></div>
+                      <div id="projectComponentTitle">{project.title}</div>
+                    </div>
+                  </a>
                   <div id="projectComponentDesc">{project.description}</div>
                 </div>
-                <a id="projectBtn" href={project.url}>
+                <a id="projectBtn" href={project.source_code}>
                   <button type="submit" value="Source" className="btn btn-outline-info">Source</button>
                 </a>     
               </div>
