@@ -15,7 +15,7 @@ app.use(express.json());
 // Get most recent projects for home page
 app.get("/api/v1/", async (req, res) => {
   try {
-    const projects = await db.query("SELECT * FROM projects");
+    const projects = await db.query("SELECT * FROM projects ORDER BY project_id ASC");
     res.status(200).json({
       status: "Success",
       results: projects.rows.length,
