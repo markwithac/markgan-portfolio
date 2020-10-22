@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from "react";
-import ProjectFinder from "../apis/ProjectFinder";
-import { ProjectsContext } from "../context/ProjectsContext";
+import ProjectFinder from "../../apis/ProjectFinder";
+import { ProjectsContext } from "../../context/ProjectsContext";
 
 
 const AdminProjectList = (props) => {

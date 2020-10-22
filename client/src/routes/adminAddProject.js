@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../components/Header";
-import AdminAddPoject from "../components/AdminAddProject"
-import AdminProjectList from "../components/adminProjectList";
+import AdminAddPoject from "../components/Admin/AdminAddProject"
+import AdminProjectList from "../components/Admin/adminProjectList";
 
 const adminAddPoject = () => {
   return (

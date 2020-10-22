@@ -17,9 +17,11 @@ INSERT INTO projects (title, description, source_code, icon) VALUES ('Discord Bo
 
 INSERT INTO projects (title, description, source_code, link, icon) VALUES ('Weather App', 'A weather app using the OpenWeatherMap API', 'https://markwithac.github.io/weatherapp/', 'https://github.com/markwithac/weatherapp-bot', 'fas fa-cloud fa-lg');
 
+INSERT INTO projects (title, description, source_code, link, icon) VALUES ('This Website', 'My portfolio website built on the PERN stack.', 'https://github.com/markwithac/markgan-portfolio', 'http://markganhao.ca', '<fas fa-home fa-lg');
 
 UPDATE projects
-SET link = 'https://markwithac.github.io/bakery/'
-WHERE project_id=1;
+SET icon = 'fas fa-home fa-lg',
+    column2 = "example"
+WHERE project_id=4
 
 -- $ heroku pg:psql    // connect to heroku postgres bd
