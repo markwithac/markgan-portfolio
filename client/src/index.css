@@ -93,12 +93,13 @@ nav {
 
 /* BANNER */
 #banner {
-  /* background: #333333; */
-  height: 405px;
+  display: flex;
+  min-height: 405px;
   text-align: center;
   font-size: 2rem;
   color: #f7f7f7;
   display: flex;
+  padding-bottom: 20px;
 }
 
 #banner-container-outter {
@@ -106,10 +107,10 @@ nav {
   width: 95%;
   max-width: 761px;
   margin: auto;
-  height: 300px;
-  box-shadow: 7px 11px 8px #191919;
+  min-height: 300px;
   display: flex;
   margin-top: 75px;
+  box-shadow: 1px 4px 10px #191919;
 }
 
 #banner-container-inner {
@@ -125,6 +126,7 @@ nav {
 #banner-profile-pic {
   align-self: start;
   border: 4px groove #f7f7f7;
+  margin: 10px 0;
 }
 
 #banner-main {
@@ -136,11 +138,10 @@ nav {
 
 #banner-title {
   font-size: 1.5rem;
-  /* margin: 5px 15px; */
+  margin: 10px 0;
   background: #191919;
   text-align: left;
-  padding-left: 10px;
-  border: 2px solid #191919;
+  padding: 10px;
   box-shadow: 8px 12px 10px #191919;
 }
 
@@ -150,13 +151,14 @@ nav {
   padding-left: 1.5px;
   color: #f7f7f7;
   background: #191919;
-  padding: 15px 10px;
+  padding: 10px 10px;
+  margin: 10px 0;
   box-shadow: 8px 12px 10px #191919;
 
 }
 
-
 #banner-list {
+  padding: 10px 0;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -167,9 +169,11 @@ nav {
 .banner-btn {
   flex-grow: 1;
   width: 100%;
-  margin: 5px 5px;
+  margin: 6px 0;
   box-shadow: 8px 12px 10px black;
 }
+
+
 
 .banner-list-item:hover {
   background: #222222;
@@ -232,8 +236,13 @@ table {
   padding-right: 8px;
 }
 
+#projectComponentHeader {
+  padding-right: 20px;
+}
+
 #projectBtn {
   align-self: center;
+
 }
 
 
@@ -299,7 +308,12 @@ table {
 
   .banner-btn {
     width: unset;
+    margin-right: 15px;
   }
+
+  /* #banner-container-outter {
+    box-shadow: 7px 5px 10px #191919;
+  } */
   
 }
 

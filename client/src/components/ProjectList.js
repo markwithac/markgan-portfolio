@@ -37,7 +37,7 @@ const ProjectList = (props) => {
                   <div id="projectComponentDesc">{project.description}</div>
                 </div>
                 <a id="projectBtn" href={project.source_code}>
-                  <button type="submit" value="Source" className="btn btn-outline-info">Source</button>
+                  <button type="submit" value="Source" className="btn btn-outline-info src-btn">Source</button>
                 </a>     
               </div>
         )})}

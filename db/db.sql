@@ -20,8 +20,9 @@ INSERT INTO projects (title, description, source_code, link, icon) VALUES ('Weat
 INSERT INTO projects (title, description, source_code, link, icon) VALUES ('This Website', 'My portfolio website built on the PERN stack.', 'https://github.com/markwithac/markgan-portfolio', 'http://markganhao.ca', '<fas fa-home fa-lg');
 
 UPDATE projects
-SET icon = 'fas fa-home fa-lg',
-    column2 = "example"
-WHERE project_id=4
+SET source_code = 'https://github.com/markwithac/discord-bot'
+WHERE project_id=2;
+
+SELECT * FROM projects;
 
 -- $ heroku pg:psql    // connect to heroku postgres bd

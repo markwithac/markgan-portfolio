@@ -13,7 +13,7 @@ const Banner = () => {
             <div id="banner-body">I'm a former project manager turned self-taught programmer. This website serves as a record of things I've created and learned.</div>
             <ul id="banner-list">
               <li className='banner-list-item'><button path="/" className="btn btn-lg btn-info banner-btn">About Me</button></li>
-              <li className='banner-list-item'><button path="https://github.com/markwithac" className="btn btn-info btn-lg banner-btn">GitHub</button></li>
+              <li className='banner-list-item'><a href="https://github.com/markwithac"><button className="btn btn-info btn-lg banner-btn">GitHub</button></a></li>
             </ul>
           </div>
         </div>
