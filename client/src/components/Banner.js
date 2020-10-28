@@ -4,7 +4,7 @@ import Profile from "./profile-pic-180px.png"
 
 const Banner = () => {
   return (
-    <div id="banner">
+    <div id="banner" className="bg-info">
       <div id="banner-container-outter">
         <div id="banner-container-inner">
           <img src={Profile} id="banner-profile-pic" alt="profile-pic" />
@@ -12,8 +12,8 @@ const Banner = () => {
             <div id="banner-title">Welcome! I'm Mark Ganhao.</div>
             <div id="banner-body">I'm a former project manager turned self-taught programmer. This website serves as a record of things I've created and learned.</div>
             <ul id="banner-list">
-              <li className='banner-list-item'><a href="/" className="banner-btn">About Me</a></li>
-              <li className='banner-list-item'><a href="https://github.com/markwithac" className="banner-btn">GitHub</a></li>
+              <li className='banner-list-item'><button path="/" className="btn btn-lg btn-info banner-btn">About Me</button></li>
+              <li className='banner-list-item'><button path="https://github.com/markwithac" className="btn btn-info btn-lg banner-btn">GitHub</button></li>
             </ul>
           </div>
         </div>

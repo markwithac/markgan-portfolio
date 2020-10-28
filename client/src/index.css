@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+
+/* bootstrap info color #17a2b8 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 a {
@@ -91,7 +93,7 @@ nav {
 
 /* BANNER */
 #banner {
-  background: #222222;
+  /* background: #333333; */
   height: 405px;
   text-align: center;
   font-size: 2rem;
@@ -100,7 +102,7 @@ nav {
 }
 
 #banner-container-outter {
-  background: #333333;
+  background: #222222;
   width: 95%;
   max-width: 761px;
   margin: auto;
@@ -130,7 +132,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20px;
 }
 
 #banner-title {
@@ -144,27 +145,30 @@ nav {
 }
 
 #banner-body {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   text-align: justify;
   padding-left: 1.5px;
   color: #f7f7f7;
+  background: #191919;
+  padding: 15px 10px;
+  box-shadow: 8px 12px 10px #191919;
+
 }
+
 
 #banner-list {
   font-size: 1.2rem;
-}
-
-.banner-list-item {
-  background: #7f7f7f;
-  margin: 6px 5px;
-  border: 2px solid #f7f7f7;
-  box-shadow: 8px 12px 10px #191919;
-  text-align: left;
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .banner-btn {
-  display: block;
+  flex-grow: 1;
+  width: 100%;
+  margin: 5px 5px;
+  box-shadow: 8px 12px 10px black;
 }
 
 .banner-list-item:hover {
@@ -285,8 +289,21 @@ table {
     width: 750px;
   }
 
+  #banner-list {
+    flex-direction: row;
+  }
+
+  #banner-main {
+    padding-left: 20px;
+  }
+
+  .banner-btn {
+    width: unset;
+  }
   
 }
+
+
 
 @media (max-width: 768px) {
   #banner-profile-pic {
