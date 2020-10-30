@@ -10,13 +10,13 @@
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
 a:hover {
   cursor: pointer;
   color: inherit;
+  text-decoration: none;
 }
 
 ul {
@@ -51,7 +51,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 750px;
+  max-width: 761px;
   justify-content: space-between;
   align-content: center;
 }
@@ -295,7 +295,7 @@ table {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 761px;
   }
 
   #banner-list {
@@ -334,3 +334,27 @@ table {
     width: 1170px;
   }
 } */
+
+
+
+/* ABOUT PAGE */
+
+#about-header {
+  width: 70%;
+  margin: auto; 
+  padding-top: 75px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-img {
+  margin: auto;
+  text-align: center;
+  border: 2px solid red;
+}
+
+/* #about-main */
+
+
+
+
