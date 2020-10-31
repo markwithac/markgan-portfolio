@@ -191,6 +191,16 @@ table {
   color: #222222;
 }
 
+#projectListFullTitle {
+  text-align: center;
+  padding: 90px 0 15px 0;
+  color: #222222;
+}
+
+#ProjectListEnd {
+  padding: 25px 0;
+}
+
 .tableRow {
   display: flex;
   flex-direction: row;
@@ -214,6 +224,10 @@ table {
   align-content: center;
   padding: 10px 0 10px 0;
   border-bottom: #cccccc solid 1px;
+}
+
+#projectComponent:last-child {
+  border-bottom: unset;
 }
 
 #projectComponentDesc {
@@ -242,7 +256,14 @@ table {
 
 #projectBtn {
   align-self: center;
+}
 
+
+
+#project-list-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 
@@ -259,6 +280,16 @@ table {
 
 
 /* FOOTER */
+
+footer {
+  /* border-top: #cccccc solid 1px; */
+  background: #191919;
+  /* max-width: 761px; */
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
 .quickLinks {
   padding: 25px 0 25px;
   list-style: none;
@@ -267,6 +298,7 @@ table {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
+  color: white;
 }
 
 #smLinks {
@@ -279,6 +311,9 @@ table {
   margin: auto;
 }
 
+.fa-twitter, .fa-linkedin, .fa-instagram, .fa-github {
+  color: white;
+}
 
 /* ADMIN */
 .admin {
@@ -339,21 +374,46 @@ table {
 
 /* ABOUT PAGE */
 
-#about-header {
-  width: 70%;
+#about {
+  max-width: 761px;
   margin: auto; 
-  padding-top: 75px;
+  padding-top: 95px;
   text-align: center;
   font-size: 2rem;
 }
 
-.about-img {
+#about h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+#about p {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+#about-img {
   margin: auto;
   text-align: center;
-  border: 2px solid red;
+  padding: 15px 0;
+  width: 80%;
+}
+
+#about ul {
+  text-align: left;
+  padding: 10px 0;
+}
+
+#about ul li {
+  font-size: 1.25rem;
+  list-style: unset;
+  list-style-position: inside;
 }
 
 /* #about-main */
+
+
 
 
 

@@ -1,10 +1,9 @@
 import React, { useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 import ProjectFinder from "../apis/ProjectFinder";
 import { ProjectsContext } from "../context/ProjectsContext";
 
 
-const ProjectList = (props) => {
+const ProjectListFull = (props) => {
 
   const { projects, setProjects } = useContext(ProjectsContext);
   // eslint-disable-next-line
@@ -21,7 +20,8 @@ const ProjectList = (props) => {
 
   return (
     <div className="container">
-      <h2 id="projectListTitle">Projects</h2>
+
+      <h2 id="projectListFullTitle">Projects</h2>
         <div>
         {projects && 
           projects.map(project => {
@@ -43,13 +43,10 @@ const ProjectList = (props) => {
               </div>
         )})}
         </div>
-      <div id="project-list-btn">
-        <Link to="/projects" class="btn btn-info">All Projects</Link>
-      </div>  
-      
+        <div id="ProjectListEnd"></div>
     </div>
 
   )
 }
 
-export default ProjectList;
+export default ProjectListFull;

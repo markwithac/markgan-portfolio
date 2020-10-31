@@ -4,11 +4,11 @@ import img from "./profile-761.png"
 const About = () => {
   return (
     <div>
-      <div id="about-header" className="container">
+      <div id="about" className="container">
         <h2>About me (IN PROGRESS)</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis consectetur nulla, at convallis odio rutrum vel. Vestibulum a est libero. Pellentesque iaculis tempus tellus non luctus. Maecenas congue dapibus urna eu pharetra. Sed molestie justo nec libero ornare vehicula. Suspendisse potenti. Duis vulputate, nisi sit amet dignissim facilisis, lectus nulla lacinia magna, ut placerat magna metus eget lacus. Donec luctus a eros et aliquet. Pellentesque commodo lacinia lorem a efficitur. Maecenas pellentesque mi orci, a varius ligula hendrerit id.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis consectetur nulla, at convallis odio rutrum vel. Vestibulum a est libero. Pellentesque iaculis tempus tellus non luctus. Maecenas congue dapibus urna eu pharetra. Sed molestie justo nec libero ornare vehicula.</p>
         
-        <img src={img} alt="Mark Ganhao seated at a gaming event." />
+        <img id="about-img" src={img} alt="Mark Ganhao seated at a gaming event." />
         
         <h2>Mission</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis consectetur nulla, at convallis odio rutrum vel. Vestibulum a est libero. Pellentesque iaculis tempus tellus non luctus.</p>

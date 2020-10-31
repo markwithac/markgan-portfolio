@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
 
-    <footer id="container">
+    <footer>
       <div id="footer">
         <ul className="quickLinks">
           {/* eslint-disable-next-line */}
           <li><a href="#">Back to Top</a></li>
           {/* eslint-disable-next-line */}
-          <li><a href="#">Projects</a></li>
+          <li><Link to="/projects">Projects</Link></li>
           {/* eslint-disable-next-line */}
-          <li><a href="#">Articles</a></li>
+          <li><Link to="/articles">Articles</Link></li>
           {/* eslint-disable-next-line */}
-          <li><a href="#">Donate</a></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
 
       </div>

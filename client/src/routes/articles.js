@@ -1,10 +1,10 @@
 import React from "react"
 import Header from "../components/Header";
-import ProjectListFull from "../components/ProjectListFull"
+import ProjectListFull from "../components/ProjectListFull"  // temp data until article database produced
 import Footer from "../components/Footer"
 
 
-const ProjectListPage = () => {
+const ArticleListPage = () => {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ const ProjectListPage = () => {
   )
 }
 
-export default ProjectListPage
+export default ArticleListPage
