@@ -1,6 +1,7 @@
 import React, { useState, useContext }from 'react'
 import ProjectFinder from "../../apis/ProjectFinder"
 import { ProjectsContext } from '../../context/ProjectsContext';
+import "./admin.css"
 
 const AdminAddProject = () => {
 

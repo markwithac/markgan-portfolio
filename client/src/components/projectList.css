@@ -1,0 +1,78 @@
+/* PROJECT LIST */
+table {
+  width:100%;
+}
+
+#projectListTitle {
+  text-align: center;
+  padding: 25px 0 15px 0;
+  color: #222222;
+}
+
+#projectListFullTitle {
+  text-align: center;
+  padding: 90px 0 15px 0;
+  color: #222222;
+}
+
+#ProjectListEnd {
+  padding: 25px 0;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.iconTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+#projectComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 0 10px 0;
+  border-bottom: #cccccc solid 1px;
+}
+
+#projectComponent:last-child {
+  border-bottom: unset;
+}
+
+#projectComponentDesc {
+  color: #808080;
+  font-size: 0.85rem;
+}
+
+#projectComponentTitle {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+#projectComponentIconTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+#projectComponentIcon {
+  align-self: center;
+  padding-right: 8px;
+}
+
+#projectComponentHeader {
+  padding-right: 20px;
+}
+
+#projectBtn {
+  align-self: center;
+}
+
+#project-list-btn {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}

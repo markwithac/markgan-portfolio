@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import ProjectFinder from "../apis/ProjectFinder";
 import { ProjectsContext } from "../context/ProjectsContext";
+import "./projectList.css"
 
 
 const ProjectList = (props) => {

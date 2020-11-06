@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Profile from "./profile-pic-180px.png"
+import "./banner.css"
 
 const Banner = () => {
   return (
