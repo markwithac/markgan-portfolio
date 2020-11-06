@@ -6,8 +6,8 @@ const Header = () => {
     <nav>
       <div id="navBar">
         <div id="logo">
-          <i className="fab fa-canadian-maple-leaf fa-2x"></i>
-          <a id="title" href="/">Mark Ganhao</a>
+          <Link  to="/"><i className="fab fa-canadian-maple-leaf fa-2x"></i></Link>
+          <Link id="title" to="/">Mark Ganhao</Link>
         </div>
         
         <ul id="headerList">

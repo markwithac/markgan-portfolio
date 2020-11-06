@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const home = () => {
   return (
-    <div>
+    <div className="content-wrap">
       <Header />
       <Banner />
       <ProjectList />

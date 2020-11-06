@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const about = () => {
   return (
-    <div>
+    <div className="content-wrap">
       <Header />
       <About /> 
       <Footer />

@@ -16,14 +16,15 @@ const Footer = () => {
           {/* eslint-disable-next-line */}
           <li><Link to="/about">About</Link></li>
         </ul>
-
       </div>
-        <ul id="smLinks">
-          <li><a href="https://github.com/markwithac"><i class="fab fa-github fa-2x"></i></a></li>
-          <li><a href="https://twitter.com/MarkGanhao"><i class="fab fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mark-ganhao/"><i class="fab fa-linkedin fa-2x"></i></a></li>
-          <li><a href="https://www.instagram.com/markganhao/"><i class="fab fa-instagram fa-2x"></i></a></li>
-        </ul>
+
+      <ul id="smLinks">
+        <li><a href="https://github.com/markwithac"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/MarkGanhao"><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mark-ganhao/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/markganhao/"><i class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+
     </footer>
   )
 }

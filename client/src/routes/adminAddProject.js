@@ -5,7 +5,7 @@ import AdminProjectList from "../components/Admin/adminProjectList";
 
 const adminAddPoject = () => {
   return (
-    <div>
+    <div className="content-wrap">
       <Header />
       <AdminAddPoject />
       <AdminProjectList />

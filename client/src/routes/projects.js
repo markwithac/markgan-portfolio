@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const ProjectListPage = () => {
   return (
-    <div>
+    <div className="content-wrap">
       <Header />
       <ProjectListFull /> 
       <Footer />

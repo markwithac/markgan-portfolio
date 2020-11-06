@@ -6,10 +6,11 @@ const About = () => {
     <div>
       <div id="about" className="container">
         <h2>About me (IN PROGRESS)</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis consectetur nulla, at convallis odio rutrum vel. Vestibulum a est libero. Pellentesque iaculis tempus tellus non luctus. Maecenas congue dapibus urna eu pharetra. Sed molestie justo nec libero ornare vehicula.</p>
+        <p>Hey! My name is Mark Ganhao and I'm a former project manager turned self-taught programmer.</p>
         
         <img id="about-img" src={img} alt="Mark Ganhao seated at a gaming event." />
-        
+
+
         <h2>Mission</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis consectetur nulla, at convallis odio rutrum vel. Vestibulum a est libero. Pellentesque iaculis tempus tellus non luctus.</p>
 
