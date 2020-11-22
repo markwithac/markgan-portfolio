@@ -30,8 +30,15 @@ const Article = (props) => {
         {selectedArticle && (
           <div className="article-wrapper">
             <div className="article-header">{selectedArticle.title}</div>
-            <div className="article-date">{new Date(`${selectedArticle.posting_date.slice(5,7)}/${selectedArticle.posting_date.slice(8,10)}/${selectedArticle.posting_date.slice(0,4)}`).toDateString().slice(4)}</div>
-            <div className="article-topic">{selectedArticle.tags}</div>
+            <div className="article-date">
+              {new Date(`${selectedArticle.posting_date.slice(5,7)}/${selectedArticle.posting_date.slice(8,10)}/${selectedArticle.posting_date.slice(0,4)}`).toDateString().slice(4)} By <b>{selectedArticle.author}</b>
+            </div>
+            <div className="article-tags">{selectedArticle.tags.map(tag => { 
+              return (
+                <div className="tag btn btn-secondary btn-sm">{tag}</div>
+              ) 
+              })}
+            </div>
             <div className="article-body">{selectedArticle.body}</div>
           </div>
         ) }

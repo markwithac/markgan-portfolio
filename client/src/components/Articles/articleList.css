@@ -25,22 +25,22 @@
   margin-bottom: unset;
 }
 
-.article-link {
+.articles-link {
   display: flex;
 }
 
-.article-component {
+.articles-component {
   padding: 15px 10px;
   align-content: center;
 }
 
-.article-component:hover {
+.articles-component:hover {
   background: #f8f9fa;
   border-radius: 8px ;
 }
 
 
-.article-date {
+.articles-date {
   font-size: 0.9rem;
   font-weight: 400;
   align-self: center;
@@ -48,11 +48,11 @@
   color: #858b93;
 }
 
-.article-title {
+.articles-title {
   font-weight: 700;
 }
 
-.article-component:last-child {
+.articles-component:last-child {
   padding-bottom: 20px;
 }
 

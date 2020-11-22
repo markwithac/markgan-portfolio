@@ -32,14 +32,15 @@ CREATE TABLE articles (
   author VARCHAR(100) NOT NULL,
   author_link TEXT,
   body TEXT NOT NULL, 
-  posting_date DATE NOT NULL DEFAULT CURRENT_DATE
+  posting_date DATE NOT NULL DEFAULT CURRENT_DATE,
   tags TEXT []
 ); 
 
-INSERT INTO articles (title, author, body, tags) VALUES ('Test Article Title 1', 'Mark Ganhao', 'Test Article Body 1', '{["notes", "react"]}');
-INSERT INTO articles (title, author, body tags) VALUES ('Test Article Title 2', 'Mark Ganhao', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus pharetra lacus, non consectetur lorem sodales nec. Integer id nunc suscipit, auctor arcu sed, iaculis neque. Donec dignissim molestie semper. Mauris mi elit, pulvinar sit amet dolor vitae, efficitur fermentum neque. Donec malesuada efficitur lacus, at condimentum turpis scelerisque nec. Etiam euismod tincidunt lacinia. Proin ac mollis metus.
+INSERT INTO articles (title, author, body, tags) VALUES ('Test Article Title 1', 'Mark Ganhao', 'Test Article Body 1', ARRAY ['notes', 'react']);
 
-Duis et leo neque. Pellentesque tempor dignissim tellus eu faucibus. Duis tristique, dui non ultrices vulputate, nisl est lobortis orci, eu lobortis libero arcu ultrices erat. Nunc condimentum metus ac urna iaculis ullamcorper. Sed in nulla sit amet erat ullamcorper lacinia. Quisque in diam nisi. Nulla commodo sit amet nunc ut lacinia. Nam quam odio, faucibus id varius at, pulvinar sed ex. Phasellus pharetra porttitor mi, at tincidunt felis elementum a. Morbi non mi sagittis, euismod dolor ut, egestas dui. Integer purus mauris, volutpat at gravida vitae, suscipit vitae nisl. Curabitur ac elementum justo. Duis ut placerat nisl. Nam tristique nisi vulputate orci fermentum fringilla. Mauris imperdiet tincidunt ipsum et varius. Maecenas pharetra efficitur lacus non pulvinar.', '{["notes", "react"]}');
+INSERT INTO articles (title, author, body, tags) VALUES ('Test Article Title 2', 'Mark Ganhao', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus pharetra lacus, non consectetur lorem sodales nec. Integer id nunc suscipit, auctor arcu sed, iaculis neque. Donec dignissim molestie semper. Mauris mi elit, pulvinar sit amet dolor vitae, efficitur fermentum neque. Donec malesuada efficitur lacus, at condimentum turpis scelerisque nec. Etiam euismod tincidunt lacinia. Proin ac mollis metus.
+
+Duis et leo neque. Pellentesque tempor dignissim tellus eu faucibus. Duis tristique, dui non ultrices vulputate, nisl est lobortis orci, eu lobortis libero arcu ultrices erat. Nunc condimentum metus ac urna iaculis ullamcorper. Sed in nulla sit amet erat ullamcorper lacinia. Quisque in diam nisi. Nulla commodo sit amet nunc ut lacinia. Nam quam odio, faucibus id varius at, pulvinar sed ex. Phasellus pharetra porttitor mi, at tincidunt felis elementum a. Morbi non mi sagittis, euismod dolor ut, egestas dui. Integer purus mauris, volutpat at gravida vitae, suscipit vitae nisl. Curabitur ac elementum justo. Duis ut placerat nisl. Nam tristique nisi vulputate orci fermentum fringilla. Mauris imperdiet tincidunt ipsum et varius. Maecenas pharetra efficitur lacus non pulvinar.', '{"notes", "react"}');
 
 
 
