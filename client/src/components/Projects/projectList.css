@@ -31,7 +31,6 @@
 .tableRow {
   display: flex;
   flex-direction: row;
-  
 }
 
 .iconTitle {
@@ -45,7 +44,7 @@
   justify-content: space-between;
   align-content: center;
   padding: 10px 0 10px 0;
-  border-bottom: #cccccc solid 1px;
+  border-bottom: #f1f4f8 solid 2px;
 }
 
 .project-link {

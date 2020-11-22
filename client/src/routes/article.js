@@ -1,16 +1,16 @@
 import React from "react"
 import Header from "../components/Header";
 import Footer from "../components/Footer"
-import ArticleListFull from "../components/Articles/ArticleListFull"
+import ArticleComponent from "../components/Articles/Article"
 
-const ArticleListPage = () => {
+const Article = () => {
   return (
     <div className="content-wrap">
       <Header />
-      <ArticleListFull />
+      <ArticleComponent />
       <Footer />
     </div>
   )
 }
 
-export default ArticleListPage
+export default Article

@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import ProjectFinder from "../apis/ProjectFinder";
-import { DbContext } from "../context/DbContext"
+import ProjectFinder from "../../apis/ProjectFinder";
+import { DbContext } from "../../context/DbContext"
 import "./articleList.css"
 
 
@@ -27,7 +27,7 @@ const ArticleList = (props) => {
       <div className="list-header">
         <h2 className="list-title">Articles</h2>
         <div className="list-btn">
-          <Link to="/projects" className="btn btn-info btn-sm project-btn">All Articles</Link>
+          <Link to="/articles" className="btn btn-info btn-sm project-btn">All Articles</Link>
         </div>  
       </div>
         <div>
@@ -37,10 +37,10 @@ const ArticleList = (props) => {
             console.log(date)
             return (
               <div className="article-component" key={article.id}>
-                <a className="article-link" href={article.link}>
+                <Link className="article-link" to={`/articles/${article.article_id}`}>
                   <div className="article-date">{date.toDateString().slice(4)}</div>
                   <div className="article-title">{article.title}</div>
-                </a>
+                </Link>
               </div>   
         )})}
         </div>
