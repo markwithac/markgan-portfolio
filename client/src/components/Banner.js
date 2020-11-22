@@ -16,7 +16,7 @@ const Banner = () => {
               
               <ul id="banner-list">
                 <li className='banner-list-item'>
-                  <Link class="btn btn-lg btn-info banner-btn" to="/about">About Me</Link>
+                  <Link className="btn btn-lg btn-info banner-btn" to="/about">About Me</Link>
                 </li>
                 <li className='banner-list-item'>
                   <a href="https://github.com/markwithac" className="btn btn-info btn-lg banner-btn">Github</a>

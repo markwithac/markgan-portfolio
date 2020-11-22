@@ -1,12 +1,12 @@
 import React, { useEffect, useContext } from "react";
 import ProjectFinder from "../apis/ProjectFinder";
-import { ProjectsContext } from "../context/ProjectsContext";
+import { DbContext } from "../context/DbContext";
 import "./projectList.css"
 
 
 const ProjectListFull = (props) => {
 
-  const { projects, setProjects } = useContext(ProjectsContext);
+  const { projects, setProjects } = useContext(DbContext);
   // eslint-disable-next-line
   useEffect(() => {
     const fetchData = async () => {

@@ -1,7 +1,8 @@
 import React from "react"
 import Header from "../components/Header";
 import Banner from "../components/Banner";
-import ProjectList from "../components/ProjectList";  
+import ProjectList from "../components/ProjectList"; 
+import ArticleList from "../components/ArticleList"; 
 import Footer from "../components/Footer";
 
 
@@ -11,6 +12,7 @@ const home = () => {
       <Header />
       <Banner />
       <ProjectList />
+      <ArticleList />
       <Footer />
     </div>
   )

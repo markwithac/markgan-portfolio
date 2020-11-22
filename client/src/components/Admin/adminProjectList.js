@@ -1,12 +1,12 @@
 import React, { useEffect, useContext } from "react";
 import ProjectFinder from "../../apis/ProjectFinder";
-import { ProjectsContext } from "../../context/ProjectsContext";
+import { DbContext } from '../../context/DbContext';
 import "./admin.css"
 
 
 const AdminProjectList = (props) => {
 
-  const { projects, setProjects } = useContext(ProjectsContext);
+  const { projects, setProjects } = useContext(DbContext);
   // eslint-disable-next-line
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +22,7 @@ const AdminProjectList = (props) => {
   return (
     <div id="adminContainer">
       <h2 id="projectListTitle">Projects</h2>
-      <table class="table table-bordered table-sm">
+      <table className="table table-bordered table-sm">
         <thead>
           <tr className="table-active">
             <th scope="col">ID</th>

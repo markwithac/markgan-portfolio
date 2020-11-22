@@ -4,13 +4,13 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import Projects from "./routes/projects";
 import Articles from "./routes/articles"
-import { ProjectsContextProvider } from './context/ProjectsContext';
+import { DbContextProvider } from './context/DbContext';
 import AdminAddProject from "./routes/adminAddProject";
 
 
 const App = () => {
   return (
-    <ProjectsContextProvider>
+    <DbContextProvider>
       <div>
         <Router>
           <Switch>
@@ -22,7 +22,7 @@ const App = () => {
           </Switch>
         </Router>
       </div>
-    </ProjectsContextProvider>
+    </DbContextProvider>
   )
 };
 

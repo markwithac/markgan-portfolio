@@ -1,11 +1,11 @@
 import React, { useState, useContext }from 'react'
 import ProjectFinder from "../../apis/ProjectFinder"
-import { ProjectsContext } from '../../context/ProjectsContext';
+import { DbContext } from '../../context/DbContext';
 import "./admin.css"
 
 const AdminAddProject = () => {
 
-  const { addProject } = useContext(ProjectsContext) 
+  const { addProject } = useContext(DbContext) 
 
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")

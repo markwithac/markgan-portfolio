@@ -10,6 +10,16 @@ CREATE TABLE projects (
   posting_date DATE NOT NULL DEFAULT CURRENT_DATE
 ); 
 
+CREATE TABLE articles (
+  article_id SERIAL PRIMARY KEY,
+  title VARCHAR(25) NOT NULL,
+  description varchar(150),
+  body TEXT NOT NULL, 
+  link TEXT,
+  icon TEXT,
+  posting_date DATE NOT NULL DEFAULT CURRENT_DATE
+); 
+
 
 INSERT INTO projects (title, description, source_code, link, icon) VALUES ('Bakery', 'My first static webpage - a Bakery website.', 'https://github.com/markwithac/bakery', 'http://google.ca', 'fas fa-bread-slice fa-lg');
 
@@ -21,7 +31,7 @@ INSERT INTO projects (title, description, source_code, link, icon) VALUES ('This
 
 UPDATE projects
 SET source_code = 'https://github.com/markwithac/discord-bot'
-WHERE project_id=2;
+WHERE project_id = 2;
 
 SELECT * FROM projects;
 
