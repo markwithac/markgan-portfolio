@@ -1,6 +1,6 @@
-.article-header {
+.article-title {
   padding-top: 70px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -23,4 +23,23 @@
 
 .article-body {
   padding-bottom: 25px;
+}
+
+.article-wrapper:last-child {
+  margin-bottom: 20px;
+}
+
+.article-p {
+  padding-top: 25px;
+  font-size: 1.25rem;
+  color: #191919
+}
+
+.article-header {
+  padding: 20px 0 10px;
+  border-bottom: 2px solid #f1f4f8;
+}
+
+.article-img {
+  margin: auto;
 }

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { DbContext } from "../../context/DbContext";
 import ProjectFinder from "../../apis/ProjectFinder";
 import "./article.css"
-
+// import "/client/src/images/articles"
 
 const Article = (props) => {
 
@@ -29,7 +29,7 @@ const Article = (props) => {
     <div className="container">
         {selectedArticle && (
           <div className="article-wrapper">
-            <div className="article-header">{selectedArticle.title}</div>
+            <div className="article-title">{selectedArticle.title}</div>
             <div className="article-date">
               {new Date(`${selectedArticle.posting_date.slice(5,7)}/${selectedArticle.posting_date.slice(8,10)}/${selectedArticle.posting_date.slice(0,4)}`).toDateString().slice(4)} By <b>{selectedArticle.author}</b>
             </div>
@@ -39,7 +39,8 @@ const Article = (props) => {
               ) 
               })}
             </div>
-            <div className="article-body">{selectedArticle.body}</div>
+            {/* <div className="article-body">{selectedArticle.body}</div> */}
+            <div dangerouslySetInnerHTML={{ __html: selectedArticle.body}} />
           </div>
         ) }
     </div>

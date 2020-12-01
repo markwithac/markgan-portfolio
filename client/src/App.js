@@ -5,8 +5,9 @@ import About from "./routes/about";
 import Projects from "./routes/projects";
 import Articles from "./routes/articles"
 import { DbContextProvider } from './context/DbContext';
-import AdminAddProject from "./routes/adminAddProject";
+// import AdminAddProject from "./routes/adminAddProject";
 import Article from './routes/article'
+import Admin from './routes/admin'
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/articles" component={Articles} />
-            <Route exact path="/admin/addProject" component={AdminAddProject} />;
+            <Route exact path="/admin" component={Admin} />;
+            {/* <Route exact path="/admin/projects" component={AdminAddProject} />; */}
             <Route exact path="/articles/:article_id" component={Article} />;
           </Switch>
         </Router>

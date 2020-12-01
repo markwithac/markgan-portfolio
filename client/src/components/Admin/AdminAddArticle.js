@@ -3,25 +3,27 @@ import ProjectFinder from "../../apis/ProjectFinder"
 import { DbContext } from '../../context/DbContext';
 import "./admin.css"
 
-const AdminAddProject = () => {
+const AdminAddArticle = () => {
 
-  const { addProject } = useContext(DbContext) 
+  const { addArticle } = useContext(DbContext) 
 
   const [title, setTitle] = useState("")
-  const [desc, setDesc] = useState("")
-  const [url, setUrl] = useState("")
-  const [link, setLink] = useState("")
+  const [author, setAuthor] = useState("")
+  const [author_link, setAuthorUrl] = useState("")
+  const [body, setBody] = useState("")
+  const [tags, setTags] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await ProjectFinder.put(`/api/v1/admin/addProject/`, {
+      const response = await ProjectFinder.put(`/api/v1/admin/addArticle/`, {
         title,
-        description: desc,
-        url,
-        link,
+        author,
+        author_link,
+        body,
+        tags
       })
-      addProject(response.data.data.project)
+      addArticle(response.data.data.article)
     } catch (error) {
       
     }
@@ -41,33 +43,43 @@ const AdminAddProject = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleFormControlTextarea1">Description</label>
+          <label htmlFor="exampleFormControlTextarea1">Author</label>
           <textarea 
             className="form-control" 
             id="exampleFormControlTextarea1" 
             rows="2"
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
             />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Source Code Link</label>
+          <label htmlFor="exampleFormControlInput1">Author Link</label>
           <input 
             className="form-control" 
             id="exampleFormControlInput1" 
-            placeholder="Example: http://github/markwithac/project"
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
+            placeholder="Example: /about"
+            value={author_link}
+            onChange={(e) => setAuthorUrl(e.target.value)}
           />
         </div>
         <div className="form-group">
-          <label>Website Link (if available)</label>
+          <label>Body</label>
           <input 
             className="form-control" 
             id="exampleFormControlInput1" 
             placeholder="Example: http://github/markwithac/project"
-            value={link}
-            onChange={(e) => setLink(e.target.value)}
+            value={body}
+            onChange={(e) => setBody(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Tags</label>
+          <input 
+            className="form-control" 
+            id="exampleFormControlInput1" 
+            placeholder="React"
+            value={tags}
+            onChange={(e) => setTags(e.target.value)}
           />
         </div>
 
@@ -85,4 +97,4 @@ const AdminAddProject = () => {
   )
 };
 
-export default AdminAddProject;
+export default AdminAddArticle;

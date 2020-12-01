@@ -5,13 +5,16 @@ const db = require("./db")
 const cors = require('cors')
 const path = require("path")
 const articles = require('./routes/articles')
+const admin = require('./routes/admin')
 
 const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(cors())
 app.use(express.json());
+
 app.use('/api/v1/articles', articles)
+app.use('/api/v1/admin', admin)
 
 // Get most recent projects for home page
 app.get("/api/v1/", async (req, res) => {
@@ -20,8 +23,6 @@ app.get("/api/v1/", async (req, res) => {
       db.query("SELECT * FROM projects ORDER BY project_id DESC"), 
       db.query("SELECT * FROM articles ORDER BY article_id DESC") 
     ])
-    // const projects = await db.query("SELECT * FROM projects ORDER BY project_id DESC");
-    // const articles = await db.query("SELECT * FROM articles ORDER BY article_id DESC");
     res.status(200).json({
       status: "Success",
       project_results: projects.rows.length,
@@ -29,21 +30,6 @@ app.get("/api/v1/", async (req, res) => {
       data: {
         projects: projects.rows,
         articles: articles.rows
-      },
-    })
-  } catch (error) {
-    console.error(error.message)
-  }
-})
-
-app.post('/api/v1/admin/addProject', async (req, res) => {
-  try {
-    const projects = await db.query("INSERT INTO projects (title, description, source_code, link, icon) VALUES ($1, $2, $3, $4) RETURNING *", 
-    [req.body.title, req.body.description, req.body.url, req.body.link]);
-    res.status(200).json({
-      status: "Success",
-      data: {
-        projects: projects.rows[0],
       },
     })
   } catch (error) {
