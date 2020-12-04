@@ -28,7 +28,7 @@ const ProjectListFull = (props) => {
           projects.map(project => {
             return (
 
-              <div id="projectComponent" key={project.id}>
+              <div id="projectComponent" key={project.project_id}>
                 <div id="projectComponentHeader" >
                   <a href={project.link}>
                     <div id="projectComponentIconTitle">

@@ -46,7 +46,11 @@ UPDATE articles
 SET body = '<p class="article-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus pharetra lacus, non consectetur lorem sodales nec. Integer id nunc suscipit, auctor arcu sed, iaculis neque. Donec dignissim molestie semper. Mauris mi elit, pulvinar sit amet dolor vitae, efficitur fermentum neque. Donec malesuada efficitur lacus, at condimentum turpis scelerisque nec. Etiam euismod tincidunt lacinia. Proin ac mollis metus. Duis et leo neque. Pellentesque tempor dignissim tellus eu faucibus. Duis tristique, dui non ultrices vulputate, nisl est lobortis orci, eu lobortis libero arcu ultrices erat. Nunc condimentum metus ac urna iaculis ullamcorper.</p>
     <h2 class="article-header">Header 1</h2>
     <p class="article-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus pharetra lacus, non consectetur lorem sodales nec. Integer id nunc suscipit, auctor arcu sed, iaculis neque. Donec dignissim molestie semper. Mauris mi elit, pulvinar sit amet dolor vitae, efficitur fermentum neque. Donec malesuada efficitur lacus, at condimentum turpis scelerisque nec. Etiam euismod tincidunt lacinia. Proin ac mollis metus. Duis et leo neque. Pellentesque tempor dignissim tellus eu faucibus. Duis tristique, dui non ultrices vulputate, nisl est lobortis orci, eu lobortis libero arcu ultrices erat. Nunc condimentum metus ac urna iaculis ullamcorper.</p>
-    <img class="article-img" src="/client/src/images/logo192.png" alt="test alt" />'
+    <img class="article-img" src="/logo512.png" alt="test alt">
+    <pre class="bg-dark code-block"><code class="text-light">
+    &lt;p&gt;Sample text here...&lt;/p&gt;
+    &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+    </code></pre>'
 WHERE article_id = 1;
 
 -- $ heroku pg:psql    // connect to heroku postgres bd

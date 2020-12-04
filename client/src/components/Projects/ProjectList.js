@@ -27,7 +27,7 @@ const ProjectList = (props) => {
       <div id="project-list-header">
         <h2 id="projectListTitle">Projects</h2>
         <div id="project-list-btn">
-          <Link to="/projects" class="btn btn-info btn-sm project-btn">All Projects</Link>
+          <Link to="/projects" className="btn btn-info btn-sm project-btn">All Projects</Link>
         </div>  
       </div>
         <div>
@@ -35,7 +35,7 @@ const ProjectList = (props) => {
           projects.map(project => {
             return (
 
-              <div id="projectComponent" key={project.id}>
+              <div id="projectComponent" key={project.project_id}>
                 <a className="project-link" href={project.link}>
                   <div id="projectComponentHeader">
                     <div id="projectComponentIconTitle">

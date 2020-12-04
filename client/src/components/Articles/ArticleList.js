@@ -34,9 +34,8 @@ const ArticleList = (props) => {
         {articles && 
           articles.map(article => {
             let date = new Date(`${article.posting_date.slice(5,7)}/${article.posting_date.slice(8,10)}/${article.posting_date.slice(0,4)}`)
-            console.log(date)
             return (
-              <div className="articles-component" key={article.id}>
+              <div className="articles-component" key={article.article_id}>
                 <Link className="articles-link" to={`/articles/${article.article_id}`}>
                   <div className="articles-date">{date.toDateString().slice(4)}</div>
                   <div className="articles-title">{article.title}</div>

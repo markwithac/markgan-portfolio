@@ -21,10 +21,6 @@
   border-radius: 3px; */
 }
 
-.article-body {
-  padding-bottom: 25px;
-}
-
 .article-wrapper:last-child {
   margin-bottom: 20px;
 }
@@ -40,6 +36,18 @@
   border-bottom: 2px solid #f1f4f8;
 }
 
+.article-body {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
 .article-img {
   margin: auto;
+  max-width: 90%
+}
+
+.code-block {
+  border-radius: .4rem;
+  box-shadow: 1px 1px 10px #888888;
 }
