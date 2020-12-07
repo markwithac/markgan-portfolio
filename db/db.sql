@@ -50,7 +50,8 @@ SET body = '<p class="article-p">Lorem ipsum dolor sit amet, consectetur adipisc
     <pre class="bg-dark code-block"><code class="text-light">
     &lt;p&gt;Sample text here...&lt;/p&gt;
     &lt;p&gt;And another line of sample text here...&lt;/p&gt;
-    </code></pre>'
+    </code></pre>
+    <blockquote class="article-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus pharetra lacus, non consectetur lorem sodales nec. Integer id nunc suscipit, auctor arcu sed, iaculis neque. Donec dignissim molestie semper. Mauris mi elit, pulvinar sit amet dolor vitae, efficitur fermentum neque.</blockquote>'
 WHERE article_id = 1;
 
--- $ heroku pg:psql    // connect to heroku postgres bd
+-- $ heroku pg:psql --app markgan-portfolio      // connect to heroku postgres db 
