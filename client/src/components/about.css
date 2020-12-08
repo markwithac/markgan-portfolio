@@ -60,7 +60,7 @@
   }
   
   #about ul li {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin: 2px 1.2rem;
   }
 
@@ -69,12 +69,12 @@
   }
   
   .about-headers {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   
   #about p {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
 }
