@@ -58,7 +58,7 @@ WHERE article_id = 1;
 
 UPDATE articles
 SET body = '
-<p class="article-p">A minified version of AuthO quick start for Single-Page Apps with React.</p>
+<p class="article-p">A minified version of AuthO quick start for Single-Page Apps with React. Knowledge using React is recommended.</p>
 <h2 class="article-header">Auth0 account set up</h2>
 <ul class="article-ul">
   <li>Head to <a class="article-link" href=''https://auth0.com/''>https://auth0.com/</a> and Sign Up or Login</li>
