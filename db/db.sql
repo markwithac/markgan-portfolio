@@ -60,14 +60,14 @@ UPDATE articles
 SET body = '
 <p class="article-p">A minified version of AuthO quick start for Single-Page Apps with React.</p>
 <h2 class="article-header">Auth0 account set up</h2>
-<ul>
+<ul class="article-ul">
   <li>Head to <a class="article-link" href=''https://auth0.com/''>https://auth0.com/</a> and Sign Up or Login</li>
   <li>Go to <b>Applications</b> => <b>Create Application</b> => <b>Single Page web Application</b>.</li>
   <li>Under your application''s Settings add http://localhost:3000 to Allowed Callback URLs, Allowed Logout URLs, and Allowed Web Origins. Save Changes. Keep this tab open. 
   </li>
 </ul>
 <h2 class="article-header">React Setup</h2>
-<ul>
+<ul class="article-ul">
   <li>Create or Open new directory in Visual Studio. Open Terminal.</li>
     
   <pre class="bg-dark code-block"><code class="text-light">
@@ -111,7 +111,7 @@ SET body = '
 </ul>
 
 <h2 class="article-header">Login Component</h2>
-<ul>
+<ul class="article-ul">
   <li>Under src, create ''components'' directory. Create Login button component</li>
   
   <pre class="bg-dark code-block"><code class="text-light">
