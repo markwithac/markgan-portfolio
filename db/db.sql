@@ -55,3 +55,79 @@ SET body = '<p class="article-p">Lorem ipsum dolor sit amet, consectetur adipisc
 WHERE article_id = 1;
 
 -- $ heroku pg:psql --app markgan-portfolio      // connect to heroku postgres db 
+
+UPDATE articles
+SET body = '
+<p class="article-p">A minified version of AuthO quick start for Single-Page Apps with React.</p>
+<h2 class="article-header">Auth0 account set up</h2>
+<ul>
+  <li>Head to <a class="article-link" href=''https://auth0.com/''>https://auth0.com/</a> and Sign Up or Login</li>
+  <li>Go to <b>Applications</b> => <b>Create Application</b> => <b>Single Page web Application</b>.</li>
+  <li>Under your application''s Settings add http://localhost:3000 to Allowed Callback URLs, Allowed Logout URLs, and Allowed Web Origins. Save Changes. Keep this tab open. 
+  </li>
+</ul>
+<h2 class="article-header">React Setup</h2>
+<ul>
+  <li>Create or Open new directory in Visual Studio. Open Terminal.</li>
+    
+  <pre class="bg-dark code-block"><code class="text-light">
+    npx create-react-app .
+  </code></pre>
+  <li>In the root directory create a .env file.</li>
+  
+  <pre class="bg-dark code-block"><code class="text-light">
+    REACT_APP_AUTH0_DOMAIN=yourAuthoDomain;
+    REACT_APP_AUTH0_CLIENT_ID=yourAuthoClientId;
+  </code></pre>
+
+  <li>Auth0 Domain and Client ID can be found under your Auth0 dashboard under "Applications" -> "Settings"</li>
+  <li>Head to index.js. Import Auth0Provider</li>
+
+  <pre class="bg-dark code-block"><code class="text-light">
+    import { Auth0Provider } from ''@auth0/auth0-react'';
+  </code></pre>
+  
+  <li>Store domain and client ID variables</li>
+  
+  <pre class="bg-dark code-block"><code class="text-light">
+    const domain = process.env.REACT_APP_AUTH0_DOMAIN
+    const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
+  </code></pre>
+  
+  <li>Wrap the root component with an Auth0Provider</li>
+  
+  <pre class="bg-dark code-block"><code class="text-light">
+    ReactDOM.render(
+      &lt;Auth0Provider
+        domain={domain}
+        clientId={clientId}
+        redirectUri={window.location.origin}/&gt;
+        &lt;App /&gt;
+      &lt;Auth0Provider/p&gt;>,
+    document.getElementById(''root'')
+    );
+  </code></pre>
+
+</ul>
+
+<h2 class="article-header">Login Component</h2>
+<ul>
+  <li>Under src, create ''components'' directory. Create Login button component</li>
+  
+  <pre class="bg-dark code-block"><code class="text-light">
+    import React from ''react''
+    import { useAuth0 } from ''@auth0/auth0-react''
+    export const LoginBtn = () => {
+      const  { loginWithRedirect, isAuthenticated } = useAuth0();
+      return (
+        !isAuthenticated && (
+        &lt;button onClick={() => loginWithRedirect()}&gt;
+          Log In
+        &lt;/button&gt;
+        )
+      )
+    }
+  </code></pre>
+
+</ul>'
+WHERE article_id = 2;

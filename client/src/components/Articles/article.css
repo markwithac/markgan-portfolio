@@ -11,7 +11,7 @@
 .article-tags {
   display: flex;
   flex-direction: row;
-  padding: 10px 0 20px; 
+  padding: 10px 0 30px; 
 }
 
 .tag {
@@ -26,14 +26,15 @@
 }
 
 .article-p {
-  padding-top: 25px;
   font-size: 1.1rem;
-  color: #191919
+  color: #191919;
+  margin: 0;
 }
 
 .article-header {
   padding: 20px 0 10px;
   border-bottom: 2px solid #f1f4f8;
+  margin-bottom: 15px;
 }
 
 .article-body {
@@ -50,6 +51,7 @@
 .code-block {
   border-radius: .4rem;
   box-shadow: 1px 1px 10px #888888;
+  margin-top: 1rem;
 }
 
 blockquote {
@@ -58,4 +60,19 @@ blockquote {
   border-left: 10px solid #ffe564;
   margin: 20px 0 20px
 }
- 
+
+ul {
+  list-style-type: circle;
+}
+
+ul li {
+  list-style: unset;
+  list-style-position: outside;
+  margin: 2px 2.2rem;
+  font-size: 1.1rem;
+}
+
+.article-link {
+  color: darkcyan;
+  font-weight: bold;
+}
