@@ -13,6 +13,7 @@ const ProjectList = (props) => {
     const fetchData = async () => {
       try {
         const response = await ProjectFinder.get('/api/v1')
+        console.log(response)
         setProjects(response.data.data.projects)
       } catch (error) {
         console.log(error)
@@ -31,6 +32,7 @@ const ProjectList = (props) => {
         </div>  
       </div>
         <div>
+          {console.log(projects)}
         {projects && 
           projects.map(project => {
             return (
